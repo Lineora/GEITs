@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(~fullpage.js/dist/fullpage.min.css);
+
+#header, #footer {
+    height: 50px;
+    display: block;
+    width: 100%;
+    background: #333;
+    z-index: 9;
+    color: white;
+}  
+
+@font-face {
+    font-family: acumin-variable-concept;
+    src: url(assets/Acumin-Variable-Concept.ttf);
+}
+
+body {
+    font-family:acumin-variable-concept;
+}

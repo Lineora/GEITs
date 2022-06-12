@@ -1,0 +1,42 @@
+.contact-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: auto;
+}
+.contact-line {
+    height:fit-content;
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.contact-line:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.column {
+    margin-top: 10px;
+  }
+
+.left {
+    float:left;
+    margin-left:10%;
+    width: 10%;
+    @media screen and (max-width : 850px) {
+        margin-left: 0;
+        width: 30px;
+    }
+}
+
+.right {
+    float: right;
+    margin-right: 10%;
+    width: 60%;
+    @media screen and (max-width : 850px) {
+        margin-right: 0;
+        width: calc(100% - 40px)
+    }
+}

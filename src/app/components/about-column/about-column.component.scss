@@ -1,0 +1,13 @@
+.about-column-image {
+    width: 60px;
+    height: auto;
+    @media screen and (max-width : 600px) {
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+.about-column-title {
+    font-size: large;
+    font-weight: bold;
+}

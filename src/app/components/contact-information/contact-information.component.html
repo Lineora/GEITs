@@ -1,0 +1,14 @@
+<div class="contact-line">
+    
+    <div class="column left" *ngIf="contact == contactType.mail">
+        <img class="contact-icon"  src="assets/Mail.svg"/>
+    </div>
+    <div class="column left" *ngIf="contact == contactType.phone">
+        <img class="contact-icon"  src="assets/Phone.svg"/>
+    </div>
+    <div class="column left" *ngIf="contact == contactType.adress">
+        <img class="contact-icon"  src="assets/Adress.svg"/>
+    </div>
+
+    <div class="column right"><span *ngFor="let line of content, let isLast = last">{{line}} <br *ngIf="!isLast" /> </span></div>
+</div>
