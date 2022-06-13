@@ -21,16 +21,15 @@
     padding: 30px;
     font-size: large;
     @media screen and (max-height : 850px) {
-        margin-top: 125px;
+        margin-top: 110px;
     }
-    @media screen and (max-width : 850px) {
-        width: 600px;
-        margin-top: 125px;
+    @media screen and (max-width : 760px) {
+        margin-top: 55px;
         left: auto;
         right: auto;
         float:left;
-        margin-left: 14%;
-        margin-right: 14%;
+        margin-left: 5px;
+        margin-right: 5px;
         width: auto;
     }
 }
