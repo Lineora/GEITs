@@ -15,6 +15,10 @@
     background-color: #DA2C5D;
     opacity: 60%;
     position: absolute;
+
+    @media screen and (max-width : 760px) {
+        height: 50px;
+    }
 }
 
 .about-image {
@@ -29,6 +33,10 @@
     left: 0;
     float:left;
     width: 33%;
+
+    @media screen and (max-width : 760px) {
+        margin-top: 50px;
+    }
 }
 
 .about-image-br {
@@ -40,23 +48,19 @@
 
 .about-container {
     width: 100%;
-    height: calc(100% - 100px);
-    padding-top: 100px;
-    display: table-cell;
-    vertical-align: middle;
+    height: 100%;
+    display: flex;
     text-align: center;
-    @media screen and (max-width : 600px) {
-        margin-top: 0px;
-    }
 }
 
 .about-container-inner {
-    max-height: 100%;
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 100px;
+    height: calc(100% - 100px);
+    @media screen and (max-width : 760px) {
+        padding-top: 50px;
+        height: calc(100% - 50px);
+    }
+    margin: auto;
 }
 
 .about-illustration {
@@ -75,10 +79,12 @@
     }
     @media screen and (max-height : 700px) {
         height: 0px;
+        margin: 0px;
         visibility: collapse;
     }
     @media screen and (max-width : 1200px) {
         height: 0px;
+        margin: 0px;
         visibility: collapse;
     }
 }
@@ -92,7 +98,7 @@
     margin-top:0;
     margin-bottom: 0;
     @media screen and (max-width : 1200px) {
-        height: 0%;
+        height: 0px;
         visibility: collapse;
     }
     @media screen and (max-height : 700px) {
@@ -103,28 +109,23 @@
 
 .about-columns {
     list-style: none;
-    display: block;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
-    height: 40%;
-    columns: auto 4;
-
-    @media screen and (max-width : 1200px) {
-        columns: auto 2;
-    }
-    
-    @media screen and (max-width : 600px) {
-        columns: auto 1;
-    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-inline-start: 0%; //parce que on est dans une liste
 }
 
 .about-column {
-    display: inline-block;
-    padding: 30px;
+    width: 20%;
     color: #DA2C5D;
+    
+     @media screen and (max-width : 1200px) {
+        width: 40%;
+    }
+
     @media screen and (max-width : 600px) {
-        columns: auto 1;
-        padding: 0%;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
     }
 }
